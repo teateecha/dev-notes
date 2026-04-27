@@ -1,0 +1,84 @@
+# Name of the final executable
+NAME		=	program
+
+# Compiler and compiler flags
+CC			=	cc
+CFLAGS		=	-Wall -Wextra -Werror
+
+# Optional debug/sanitizer flags
+# CFLAGS	+=	-g
+# CFLAGS	+=	-fsanitize=address
+# CFLAGS	+=	-fsanitize=leak
+
+# Project folders
+SRC_DIR		=	src
+OBJ_DIR		=	obj
+INC_DIR		=	includes
+
+# Optional library folder, for example libft
+LIBFT_DIR	=	libft
+LIBFT_A		=	$(LIBFT_DIR)/libft.a
+
+# Optional external libraries
+# Example for readline:
+# LIBS		=	-lreadline
+LIBS		=
+
+# Include paths
+INC			=	-I$(INC_DIR) -I$(LIBFT_DIR)
+
+# Source files, written relative to SRC_DIR
+SRC			=	main.c \
+				utils/utils.c
+
+# Full source paths
+SRCS		=	$(addprefix $(SRC_DIR)/, $(SRC))
+
+# Object files keep the same folder structure inside OBJ_DIR
+OBJ			=	$(SRC:.c=.o)
+OBJS		=	$(addprefix $(OBJ_DIR)/, $(OBJ))
+
+# Makes nested make output cleaner
+MAKEFLAGS	+=	--no-print-directory
+
+# Colors for messages
+COLOR_RESET	=	\033[0m
+COLOR_GREEN	=	\033[1;32m
+COLOR_BLUE	=	\033[1;34m
+
+# Default rule
+all: $(NAME)
+
+# Build optional libft library
+$(LIBFT_A):
+	@$(MAKE) -C $(LIBFT_DIR)
+
+# Link object files into the final executable
+$(NAME): $(LIBFT_A) $(OBJS)
+	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT_A) $(LIBS) -o $(NAME)
+	@printf '%b[OK] %s compiled successfully%b\n' "$(COLOR_GREEN)" "$(NAME)" "$(COLOR_RESET)"
+
+# Compile .c files into .o files
+# $@ = target file, for example obj/main.o
+# $< = first dependency, for example src/main.c
+# mkdir -p creates needed object subfolders
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	@mkdir -p $(dir $@)
+	@$(CC) $(CFLAGS) $(INC) -c $< -o $@
+
+# Remove object files
+clean:
+	@rm -rf $(OBJ_DIR)
+	@$(MAKE) -C $(LIBFT_DIR) clean
+
+# Remove object files and executable
+fclean: clean
+	@rm -f $(NAME)
+	@$(MAKE) -C $(LIBFT_DIR) fclean
+	@printf '%b[OK] %s cleaned successfully%b\n' "$(COLOR_BLUE)" "$(NAME)" "$(COLOR_RESET)"
+
+# Rebuild everything
+re: fclean all
+
+# These targets are not files
+.PHONY: all clean fclean re
