@@ -2,7 +2,7 @@
 
 ## Daily routine
 	git checkout main
-	git pull --ff-only origin main		//ff: without creating an extra merge commit
+	git pull --ff-only origin main //without additional commit
 	git checkout <branch-name>
 	git merge main
 	git status
@@ -29,3 +29,4 @@
 	git status
 	git add <file>
 	git commit -m "FIX merge conflict: resolve changes"
+
