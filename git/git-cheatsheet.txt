@@ -2,7 +2,9 @@
 
 ## Daily routine
 	git checkout main
-	git pull --ff-only origin main //without additional commit
+	git fetch
+	git diff origin
+	git merge origin/main
 	git checkout <branch-name>
 	git merge main
 	git status
