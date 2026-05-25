@@ -1,0 +1,10 @@
+VIM SHORTCUTS AND COMMANDS
+
+HELP PAGES
+:help :w<C-d>				see all posibilities of help pages containig what was already typed
+:h :command                       	" help for ex-command 'command'
+:h 'option'                       	" help for option 'option'
+:h function()                     	" help for function 'function'
+:h modifier-key                   	" help for 'modifier'-'key' in normal mode
+:h mode_modifier-key              	" help for 'modifier'-'key' in 'mode'
+:h mode_modifier-key_modifier-key 	" help for 'modifier'-'key' 'modifier'-'key' in 'mode' 
