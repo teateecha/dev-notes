@@ -11,6 +11,7 @@
 	git diff
 	git add <file>
 	git diff --staged
+		git restore --staged <file> //unstaged if not to your liking.
 	git commit -m "VERB filename: description"
 	git push
 
