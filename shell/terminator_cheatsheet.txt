@@ -1,4 +1,4 @@
 TERMINATOR cheatsheet
 
-CTRL + SHIFT + I	Opens a new Terminal window navigation
 ALT+UP ARROW		Moves to the terminal above
+CTRL + SHIFT + T		Opens a new Terminal tab
