@@ -1,0 +1,4 @@
+TERMINATOR cheatsheet
+
+ALT+UP ARROW		Moves to the terminal above
+CTRL + SHIFT + T		Opens a new Terminal tab

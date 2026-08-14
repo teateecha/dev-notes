@@ -1,0 +1,117 @@
+Shortcut 	Description
+CTRL + SHIFT + T		Opens a new Terminal tab
+CTRL + SHIFT + I		Opens a new Terminal window
+CTRL + SHIFT + O		Split terminals Horizo­ntally
+CTRL + SHIFT + E		Split terminals Vertic­ally
+SUPER KEY + I			Spawns a new Terminator process
+ALT + L				Opens layout launcher
+CTRL + SHIFT + W		Closes the current terminal
+CTRL+ SHIFT + Q			Closes the current window
+CTRL + SHIFT + N		Minimizes the current terminal
+CTRL + SHIFT + X		Maximizes the current terminal
+CTRL + SHIFT + R		Resizes the current terminal
+F11				Toggles window to full screen
+CTRL + SHIFT + Z		Zooms current terminal
+CTRL + S­HIFT + ALT + A 	Hides the initial window
+SUPER KEY + T 			Group all terminals in the current tab so input sent to one of them, goes to all terminals in the current tab
+SUPER KEY + ­SHIFT + T 		Removes grouping from all terminals in the current tab
+SUPER KEY + G 			Group all terminals so that any input sent to one of them, goes to all of them
+SUPER KEY + ­SHIFT + G 		Removes grouping from all terminals
+ALT + A				Broadcast to All terminals
+ALT + G				Broadcast to Grouped terminals
+ALT + O				Broadcasts Off
+CTRL + ALT + A			Renames tab title
+CTRL + ALT + X			Renames terminal title
+SUPER KEY + 1			Inserts terminal number
+SUPER KEY + 0			Inserts padded terminal number
+
+Navigation Shortcuts
+
+Shortcuts under this section are helpful to quickly move the cursor and navigate through the terminal output, search the command history and autocomplete commands or file names. Below the are the most useful navigation shortcuts available in Terminator emulator.
+
+Shortcut		Description
+ALT+UP ARROW		Moves to the terminal above
+ALT+DOWN ARROW		Moves to the terminal below
+ALT+LEFT ARROW		Moves to the terminal left
+ALT+RIGHT ARROW 	Moves to the terminal right
+CTRL+P­AGE DOWN 	Moves to next Tab
+CTRL+P­AGE UP		Moves to previous Tab
+CTRL+TAB		Moves to next terminal
+CTRL+S­hif­t+TAB 	Moves to the previous terminal
+CTRL + SHIFT + F2 	Toggles the terminal session between horizontal and vertical orientation
+CTRL + SHIFT + L 	Centers the viewport on the current line
+SHIFT + HOME		Scrolls the viewport to the top of the terminal session
+SHIFT + END		Scrolls the viewport to the bottom of the terminal session
+CTRL + XX 		Switches between the start of the line and the current cursor position
+ALT + CTRL + ] + A 	Moves the cursor backward to the preceding character of A
+CTRL + ] + A 		Moves the cursor forward to the next character of A
+Text Editing Shortcuts
+
+This type of shortcuts is used to edit text within the terminal including deleting characters, words, lines, undoing actions and pasting previously deleted or cut text. The list below contains some terminator text editing shortcuts.
+
+Shortcut 	Description
+CTRL + SHIFT + C 	Copies selected text
+CTRL + SHIFT + V 	Pastes copied text
+CTRL + SHIFT + X 	Cuts selected text
+CTRL + SHIFT + Z 	Undo last action
+CTRL + SHIFT + Y 	Redo last action
+CTRL + A 	Moves the cursor to the beginning of the line
+CTRL + E 	Moves the cursor to the end of the line
+CTRL + D 	Deletes the character under the cursor
+CTRL + U 	Deletes the entire line
+CTRL + SHIFT + F 	Searches for text within the terminal
+CTRL + BACKSPACE 	Deletes the previous word
+CTRL + DELETE 	Deletes the next word
+CTRL + L 	Clears the terminal screen
+SHIFT + END 	Selects text from the cursor position to the end of the line
+SHIFT + HOME 	Selects text from the cursor position to the beginning of the line
+INSERT 	Toggles between insert and overwrite mode
+CTRL + SHIFT + F 	Opens the search dialog to search the terminal session
+General Preference Shortcuts
+
+These shortcuts are helpful to customize the general preferences of the terminal including font color and size of the terminal.
+
+Shortcut 	Description
+CTRL + SHIFT + T 	Changes the default terminal size
+CTRL + SHIFT + L 	Sets the number of scroll back lines to retain
+CTRL + SHIFT + F 	Customizes the terminal title format
+CTRL + SHIFT + A 	Changes the font and color scheme
+CTRL + SHIFT + C 	Enable/disable confirmation dialog boxes
+Terminator Plugin Shortcuts
+
+Terminal plugins are third-party add-ons that can extend the functionality of the terminal emulator and improve workflow. Terminator supports some plugins to enhance its features and capabilities. Here are some common Terminator shortcuts plugin management.
+
+Shortcut 	Description
+CTRL + SHIFT + P 	Opens the plugin manager
+CTRL + SHIFT + X 	Toggles a plugin on or off
+CTRL + SHIFT + R 	Reloads a plugin
+CTRL + SHIFT + I 	Views plugin information and settings
+CTRL + Page Down 	Switches to the next plugin
+CTRL + Page Up 	Switches to the previous plugin
+CTRL + SHIFT + O 	Focuses on the plugin output window
+Terminator Profile Shortcuts
+
+Shortcuts of this type are useful to quickly manage the terminal profile as well as customize the appearance of the terminal window.
+
+Shortcut 	Description
+CTRL + SHIFT + N 	Creates a new profile
+CTRL + SHIFT + D 	Duplicates the current profile
+CTRL + SHIFT + R 	Renames the current profile
+CTRL + SHIFT + W 	Deletes the current profile
+CTRL + SHIFT + P 	Toggles profile dropdown menu
+CTRL + TAB 	Switches to the next profile
+CTRL + SHIFT + TAB 	Switches to the previous profile
+Miscellaneous Shortcuts
+
+In addition to the window management, navigation and other shortcuts there are many shortcuts available in Terminator that can hardly be categorized. These shortcuts help to perform various tasks within the quickest amount of time.
+
+Shortcut 	Description
+ALT + . (Period) 	Inserts the last argument from the previous command at the cursor position
+CTRL + _ (Underscore) 	Undo the last change to the command line
+CTRL + X + Backspace 	Deletes the entire command line
+CTRL + G 	Aborts the current editing command and restore the original line
+CTRL + + (Plus) 	Increases font size
+CTRL + – (Minus) 	Decreases font size
+CTRL + 0 (Zero) 	Restores font size to original setting
+CTRL+ALT+W 	Renames window title
+TAB 	Autocompletes a command or file name
