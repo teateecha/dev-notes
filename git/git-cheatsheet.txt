@@ -33,3 +33,6 @@
 	git add <file>
 	git commit -m "FIX merge conflict: resolve changes"
 
+## delete current local changes
+	git reset --hard
+	git clean -fd
